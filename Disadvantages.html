@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Disadvantages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+            cursor: pointer;
+        }
+        .sector {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Disadvantages of Our University</h1>
+
+    <!-- Academic Sector -->
+    <div class="sector">
+        <h2 onclick="toggleContent('academicContent')">Academic Sector</h2>
+        <div id="academicContent" class="content">
+            <ul>
+                <li>Lack of updated curriculum</li>
+                <li>Insufficient faculty resources</li>
+                <li>Limited research opportunities</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Infrastructure Sector -->
+    <div class="sector">
+        <h2 onclick="toggleContent('infrastructureContent')">Infrastructure Sector</h2>
+        <div id="infrastructureContent" class="content">
+            <ul>
+                <li>Poor maintenance of buildings and facilities</li>
+                <li>Outdated technology and equipment</li>
+                <li>Limited space in libraries and study areas</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Administrative Sector -->
+    <div class="sector">
+        <h2 onclick="toggleContent('administrativeContent')">Administrative Sector</h2>
+        <div id="administrativeContent" class="content">
+            <ul>
+                <li>Slow processing of paperwork</li>
+                <li>Inadequate student support services</li>
+                <li>Lack of transparency in decision-making</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Financial Sector -->
+    <div class="sector">
+        <h2 onclick="toggleContent('financialContent')">Financial Sector</h2>
+        <div id="financialContent" class="content">
+            <ul>
+                <li>High tuition fees</li>
+                <li>Limited availability of scholarships and financial aid</li>
+                <li>Poor financial management and allocation of resources</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Social Sector -->
+    <div class="sector">
+        <h2 onclick="toggleContent('socialContent')">Social Sector</h2>
+        <div id="socialContent" class="content">
+            <ul>
+                <li>Limited extracurricular activities</li>
+                <li>Lack of diversity and inclusivity</li>
+                <li>Weak student community and engagement</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
